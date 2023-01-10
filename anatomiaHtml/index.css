@@ -1,0 +1,37 @@
+body {
+    display: block;
+    padding: 24px;
+}
+.cabecera {
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center
+}
+h1 {
+    color: rgb(48, 70, 88);
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor div:nth-child(1),
+.contenedor div:nth-child(2) {
+    width: 50%;
+    display: grid;
+    justify-content: center;
+}
+.pie {
+    display: grid;
+    justify-content: center;
+}
+@media (max-width:640px) {
+    .cabecera p,
+    .cabecera nav {
+        display: none;
+    }
+    .cabecera {
+        display: flex;
+        justify-content: center;
+    }
+}
